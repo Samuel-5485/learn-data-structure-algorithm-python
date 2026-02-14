@@ -40,3 +40,24 @@ print("After extend", x)
 
 x.clear()
 print("After clear:", x)
+
+# Updating elements into list
+"""since list are mutable, we can update elements by accessing them via their index"""
+a = [2, 4, 5, 6]
+a[0] = 3
+print("After update", a)
+
+# Removing elements from list
+"""We can remove elements from a list using:
+   remove():removes the first occurrence of an element
+   pop():removes the element at a specific index or the last elements if no index is specified
+   del statement:deletes an element at a specified index"""
+a.remove(4)
+print("After removed:", a)
+
+popped_val = a.pop(1) #by index if not the end value will remove
+print("Popped element", popped_val)
+print("After pop", a)
+
+del a[0]
+print("After del:", a)
